@@ -1,0 +1,17 @@
+.light{
+  color: black;
+  background-color: white;
+}
+.imgLink{
+  border-radius: 50px;
+}
+.darkMod{
+  color: white;
+  
+}
+.black{
+  background-color: rgb(25, 23, 23);
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+}
