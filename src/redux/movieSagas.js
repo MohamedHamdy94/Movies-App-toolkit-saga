@@ -9,23 +9,23 @@ import{
 
   getMovies,
   setMovies,
+
   getMovie,
   setMovie,
 
   setSearchMovies,
   getSearchMovies,
-  setLoading
+  
 } from './movieSlice'
 
 function* onLoadMoviesAsync({ payload }) {
-  yield put(setLoading(true));
+  
   try {
     const moviesInfo = payload;
 
     const response = yield call(fetchMovies,moviesInfo);
 console.log(response)
-      yield put(setMovies(response.data.results));
-      yield put(setLoading(false));
+      yield put(setMovies(response.data));
 
   } catch (error) {
     console.log(error);
@@ -39,7 +39,7 @@ function* onLoadMovies() {
 // ////////////////////////////////    movie   ////////////////////////
 
 function* onLoadMovieAsync({ payload }) {
-  yield put(setLoading(true));
+  
 
   try {
     const movieInfo = payload;
@@ -47,7 +47,6 @@ function* onLoadMovieAsync({ payload }) {
     console.log(response)
 
       yield put(setMovie( response.data));
-      yield put(setLoading(false));
 
   } catch (error) {
     console.log(error);
@@ -59,16 +58,13 @@ function* onLoadMovie() {
 
 // ////////////////////////////////    search   ////////////////////////
 function* onLoadSearchMoviesAsync({ payload }) {
-  yield put(setLoading(true));
-
+  
   try {
     const moviesInfo = payload;
     const response = yield call(fetchSearchMovie,moviesInfo);
 console.log(response.data)
       yield put(setSearchMovies(response.data.results));
       
-      yield put(setLoading(false));
-
   } catch (error) {
     console.log(error);
   }

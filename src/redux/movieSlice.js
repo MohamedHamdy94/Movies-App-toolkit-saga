@@ -7,6 +7,7 @@ const movieSlice = createSlice({
     movie: {},
     movies: [],
     page: 1,
+    total_pages:0,
     lang: 'en',
     search:'',
     loading:false
@@ -18,7 +19,9 @@ const movieSlice = createSlice({
 
     },
     setMovies: (state, action) => {
-      state.movies = action.payload;
+      state.movies = action.payload.results;
+      state.total_pages=action.payload.total_pages;
+      state.page = action.payload.page;
     },
 
     getMovie(info) {
@@ -30,10 +33,12 @@ const movieSlice = createSlice({
 
     setMoviesPage: (state, action) => {
       state.page = action.payload;
+
     },
 
     setMoviesLang: (state, action) => {
       state.lang = action.payload;
+
     },
     getSearchMovies(info) {
       return info;

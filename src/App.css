@@ -7,7 +7,11 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
-
+.bgCarousel{
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
 .img{
   margin-top: 3rem;
   margin-bottom: 5rem;

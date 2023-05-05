@@ -8,6 +8,7 @@ import { addToFavourits, removeFavourit } from '../redux/favouritsSlice';
 import './Movie.css';
 import { AiFillHeart } from 'react-icons/ai';
 import { AiOutlineHeart } from 'react-icons/ai';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Movie = (props) => {
   const { movie } = props;
@@ -16,13 +17,6 @@ const Movie = (props) => {
   const dispatch = useDispatch();
   const fav = favourits.find((item) => item.id === movie.id);
   const [image, setEmage] = useState('./images/loading_noehu7zw.gif');
-  // useEffect(()=>{
-  // console.log( "fav")
-  // },[fav,favourits])
-
-  const setSrc = () => {
-    setEmage(`https://image.tmdb.org/t/p/w500/${movie.poster_path}`);
-  };
 
   return (
     <>
@@ -31,18 +25,19 @@ const Movie = (props) => {
           borderRadius: '50px',
           borderColor: 'black',
           position: 'relative',
-          borderRadius: '2rem',
+          borderRadius: '1rem',
         }}
       >
         <Link to={`movie/${movie.id}`}>
-          <Card.Img
-            src={image}
+          <LazyLoadImage
+          className='image'
+            src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
             style={{
-              borderRadius: '2rem',
+              borderRadius: '1rem',
               background: 'black',
               borderColor: 'black',
             }}
-            onLoad={() => setSrc()}
+            loading={'lazy'}
           />
         </Link>
 

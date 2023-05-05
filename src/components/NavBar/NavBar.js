@@ -30,7 +30,7 @@ function NavBar() {
   let navgate = useNavigate();
 
   useEffect(() => {
-      dispatch(getSearchMovies({ page: page, lang: lang, search: search }));
+    search&& dispatch(getSearchMovies({ page: page, lang: lang, search: search }));
   }, [page, lang, search]);
   
   const searchSubmit = (e)=>{

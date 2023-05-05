@@ -28,9 +28,7 @@ const MovieDetails = () => {
       dispatch(getMovie({ id: id, lang: lang }));
     }
   }, [id, lang]);
-  useEffect(() => {
-    console.log(movie.genres);
-  }, []);
+
   // adult: false
   // backdrop_path: "/vvObT0eIWGlArLQx3K5wZ0uT812.jpg"
   // belongs_to_collection:
@@ -86,7 +84,7 @@ const MovieDetails = () => {
     <div
       className="bg h-100"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 1),  rgba(0, 0, 0, 0.84)), url(https://image.tmdb.org/t/p/w500/${movie.backdrop_path})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 1),  rgba(0, 0, 0, 0.64)), url(https://image.tmdb.org/t/p/w500/${movie.backdrop_path})`,
       }}
     >
       <Row>

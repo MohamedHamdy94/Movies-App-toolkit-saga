@@ -7,7 +7,7 @@ const Favourit = () => {
 console.log(movies)
   return (
     <>
-  <CardGroup className='row d-flex justify-content-center p-5'>
+  <CardGroup className='row d-flex justify-content-start p-5'>
         {movies.map((movie) => {
           return (<>
             {movie.poster_path && 

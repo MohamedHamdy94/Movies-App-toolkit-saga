@@ -1,13 +1,7 @@
-.light{
-  color: black;
-  background-color: white;
-}
-.imgLink{
-  border-radius: 50px;
-}
-.darkMod{
-  color: white;
-  
+
+.image{
+  height: 350px;
+  width: 250px;
 }
 .black{
   background-color: rgb(25, 23, 23);

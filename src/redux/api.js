@@ -7,6 +7,8 @@ export const axiosInstance = axios.create({
   },
 });
 export const fetchMovies =async (info) => {
+  console.log(info.lang)
+
 return  axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=75b7676a155f22d3e7badf2900dac062&query=${info.name}&language=${info.lang}&page=${info.page}`)
 
 }
@@ -16,10 +18,13 @@ return  axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=75b7676a1
 //   }
 
 export const fetchMovie =async (info) => {
+  console.log(info.lang)
+
   return  axios.get(`https://api.themoviedb.org/3/movie/${info.id}?api_key=75b7676a155f22d3e7badf2900dac062&language=${info.lang}`)
   
   }
   export const fetchSearchMovie =async (info) => {
+    console.log(info.lang)
     return  axios.get(`https://api.themoviedb.org/3/search/movie?api_key=75b7676a155f22d3e7badf2900dac062&query=${info.search}&language=${info.lang}&page=${info.page}`)
     
     }
