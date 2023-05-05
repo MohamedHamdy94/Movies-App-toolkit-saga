@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "8fbc5509a4670b9765f3",
+    "revision": "fb6086c89ff42231fbae",
     "url": "/Movies-App-toolkit-saga/static/css/main.8ebac0b4.chunk.css"
   },
   {
-    "revision": "8fbc5509a4670b9765f3",
-    "url": "/Movies-App-toolkit-saga/static/js/main.8fbc5509.chunk.js"
+    "revision": "fb6086c89ff42231fbae",
+    "url": "/Movies-App-toolkit-saga/static/js/main.fb6086c8.chunk.js"
   },
   {
     "revision": "75aff281b66c352666e7",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/Movies-App-toolkit-saga/static/js/runtime~main.880bfc33.js"
   },
   {
-    "revision": "85c68efc5ccd71079b320660bf8cf352",
+    "revision": "7fdccd7e41530c24feaddfa10b8fbc5c",
     "url": "/Movies-App-toolkit-saga/index.html"
   }
 ];

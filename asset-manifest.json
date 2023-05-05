@@ -1,7 +1,7 @@
 {
   "main.css": "/Movies-App-toolkit-saga/static/css/main.8ebac0b4.chunk.css",
-  "main.js": "/Movies-App-toolkit-saga/static/js/main.8fbc5509.chunk.js",
-  "main.js.map": "/Movies-App-toolkit-saga/static/js/main.8fbc5509.chunk.js.map",
+  "main.js": "/Movies-App-toolkit-saga/static/js/main.fb6086c8.chunk.js",
+  "main.js.map": "/Movies-App-toolkit-saga/static/js/main.fb6086c8.chunk.js.map",
   "static/js/1.75aff281.chunk.js": "/Movies-App-toolkit-saga/static/js/1.75aff281.chunk.js",
   "static/js/1.75aff281.chunk.js.map": "/Movies-App-toolkit-saga/static/js/1.75aff281.chunk.js.map",
   "static/css/2.f0ca1445.chunk.css": "/Movies-App-toolkit-saga/static/css/2.f0ca1445.chunk.css",
@@ -12,6 +12,6 @@
   "static/css/main.8ebac0b4.chunk.css.map": "/Movies-App-toolkit-saga/static/css/main.8ebac0b4.chunk.css.map",
   "static/css/2.f0ca1445.chunk.css.map": "/Movies-App-toolkit-saga/static/css/2.f0ca1445.chunk.css.map",
   "index.html": "/Movies-App-toolkit-saga/index.html",
-  "precache-manifest.f2bc61c964cedeed3171c863f6c634cd.js": "/Movies-App-toolkit-saga/precache-manifest.f2bc61c964cedeed3171c863f6c634cd.js",
+  "precache-manifest.6d86656aefd35d0e804ae779cc875fb5.js": "/Movies-App-toolkit-saga/precache-manifest.6d86656aefd35d0e804ae779cc875fb5.js",
   "service-worker.js": "/Movies-App-toolkit-saga/service-worker.js"
 }
