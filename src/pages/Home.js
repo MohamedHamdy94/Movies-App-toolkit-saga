@@ -63,7 +63,7 @@ const Home = () => {
               return (
                 <div
                   key={i}
-                  className="image d-flex justify-content-center col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-10 my-2"
+                  className="image col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-10 my-2"
                 >
                   <Movie movie={movie} />
                 </div>
