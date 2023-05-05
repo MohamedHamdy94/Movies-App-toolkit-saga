@@ -58,12 +58,12 @@ const Home = () => {
               );
             })}
           </Carousel>
-          <CardGroup className="row h-100 d-flex justify-content-start p-4">
+          <CardGroup className="row h-100 d-flex justify-content-start p-3">
             {movies.map((movie, i) => {
               return (
                 <div
                   key={i}
-                  className="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-10 my-2"
+                  className="image d-flex justify-content-center col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-10 my-2"
                 >
                   <Movie movie={movie} />
                 </div>

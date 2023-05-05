@@ -1,4 +1,5 @@
-
+git push
+npm run deploy
 
 # Getting Started with Create React App
 

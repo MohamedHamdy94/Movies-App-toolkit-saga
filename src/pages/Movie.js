@@ -26,6 +26,8 @@ const Movie = (props) => {
           borderColor: 'black',
           position: 'relative',
           borderRadius: '1rem',
+          height: '350px',
+          width: '250px',
         }}
       >
         <Link to={`movie/${movie.id}`}>

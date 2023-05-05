@@ -28,7 +28,7 @@ const CarouselComponent = ({ movie }) => {
             </Col>
             <Col md={8}>
               <Card.Body>
-                <div className="text-light my-5">
+                <div className="text-light my-3">
                   <div className="d-flex justify-content-between">
                     <Card.Title className="text-light mt-5">
                       <h1> {movie.original_title}</h1>
