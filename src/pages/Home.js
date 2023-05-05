@@ -39,7 +39,7 @@ const Home = () => {
         <SpinnerComponent className="home" />
       ) : (
         <>
-          <Carousel style={{ height: '500px' }} className=" h-50 mt-3">
+          <Carousel style={{ height: '500px' }} className=" h-50 ">
             {movies.map((movie, i) => {
               return (
                 <Carousel.Item key={i}>
@@ -58,12 +58,12 @@ const Home = () => {
               );
             })}
           </Carousel>
-          <CardGroup className="row h-100 d-flex justify-content-start p-3">
+          <CardGroup className="row h-100 d-flex justify-content-start p-5">
             {movies.map((movie, i) => {
               return (
                 <div
                   key={i}
-                  className="image col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-10 my-2"
+                  className="col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-10 my-2"
                 >
                   <Movie movie={movie} />
                 </div>
